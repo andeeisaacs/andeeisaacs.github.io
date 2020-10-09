@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="logic.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="ship.png">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <title> Space Hunt! </title>
+  </head>
+  <body>
+    <h1 id="top"> LOST SPACE HAUL </h1>
+
+    <h2> We lost our haul in space! Can you help us find it? </h2>
+
+    <img src="ship.png" alt="Sexy looking spaceship" height="150px">
+
+    <h4> How to find the haul:</h4>
+
+    <ol>
+      <li>Click a sector to scan for the lost haul</li>
+      <li>Space is VAST! You may scan and find only asteroids!</li>
+      <li>If you find an alien, they will suck out your brains! Be careful!</li>
+      <li> You have limited scans available to find the haul. Choose wisely!</li>
+    </ol>
+
+    <p> Scans Remaining: <span id="scans">15</span></p>
+
+    <div id="spaceTable">
+    <table  id="space" cellpadding="10">
+      <tr>
+        <td id="1" onclick="scan(1)">?</td>
+        <td id="2" onclick="scan(2)">?</td>
+        <td id="3" onclick="scan(3)">?</td>
+        <td id="4" onclick="scan(4)">?</td>
+        <td id="5" onclick="scan(5)">?</td>
+      </tr>
+      <tr>
+        <td id="6" onclick="scan(6)">?</td>
+        <td id="7" onclick="scan(7)">?</td>
+        <td id="8" onclick="scan(8)">?</td>
+        <td id="9" onclick="scan(9)">?</td>
+        <td id="10" onclick="scan(10)">?</td>
+      </tr>
+      <tr>
+        <td id="11" onclick="scan(11)">?</td>
+        <td id="12" onclick="scan(12)">?</td>
+        <td id="13" onclick="scan(13)">?</td>
+        <td id="14" onclick="scan(14)">?</td>
+        <td id="15" onclick="scan(15)">?</td>
+      </tr>
+      <tr>
+        <td id="16" onclick="scan(16)">?</td>
+        <td id="17" onclick="scan(17)">?</td>
+        <td id="18" onclick="scan(18)">?</td>
+        <td id="19" onclick="scan(19)">?</td>
+        <td id="20" onclick="scan(20)">?</td>
+      </tr>
+      <tr>
+        <td id="21" onclick="scan(21)">?</td>
+        <td id="22" onclick="scan(22)">?</td>
+        <td id="23" onclick="scan(23)">?</td>
+        <td id="24" onclick="scan(24)">?</td>
+        <td id="25" onclick="scan(25)">?</td>
+      </tr>
+    </table>
+  </div>
+    <button type="button" onclick="location.reload()"> Reset Game! </button>
+
+    <footer>
+      <p>Made by <a href="https://github.com/chantelle-isaacs">Chantelle</a> and <a href="https://github.com/andeeisaacs">Andee</a></p>
+      <p><a href="#top">Back to the top!</a></p>
+      <p><a href="http://www.nasa.gov" target="_blank">Find out more about SPACE</a></p>
+    </footer>
+
+  </body>
+</html>

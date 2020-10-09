@@ -1,0 +1,72 @@
+body {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo-bg.jpg");
+  color:white;
+  font-family: 'Source Code Pro', monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: larger;
+}
+
+h1 {
+  font-size: 100px;
+  margin: 10px;
+}
+
+td {
+  height: 80px;
+  width: 80px;
+  border: solid 3px #AAB8BE;
+  text-align: center;
+  font-size: 40px;
+  position:relative;
+
+}
+
+button {
+  margin: 40px;
+  padding: 10px;
+}
+
+td:hover{
+  cursor: url('radar.png'), auto;
+}
+
+td:hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  width: 100px;
+  height: 8px;
+  background-image: linear-gradient(to bottom,
+    rgba(170, 184, 190, 0),
+    rgba(255, 0, 0, .8));
+  animation: scanning 1.5s linear infinite;
+}
+
+@keyframes scanning {
+    100% { transform: translate(0, 90px); }
+}
+
+/* unvisited link */
+a:link {
+  color: lime;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: cyan;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
